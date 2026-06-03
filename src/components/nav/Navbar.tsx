@@ -44,7 +44,7 @@ const Navbar = () => {
 									!userToken &&(
 										<>
 											<li className='font-bold text-lg'>
-												<NavLink to="/Register" >Register</NavLink>
+												<NavLink to="/register" >Register</NavLink>
 											</li>
 											<li className='font-bold text-lg'>
 												<NavLink to="/login" >Login</NavLink>

@@ -1,0 +1,48 @@
+{
+  "name": "9-tailwind-css",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "lint": "eslint .",
+    "preview": "vite preview",
+    "cy": "cypress open",
+    "cy:run": "cypress run"
+  },
+  "dependencies": {
+    "@hookform/resolvers": "^5.1.1",
+    "@reduxjs/toolkit": "^2.8.2",
+    "@tailwindcss/vite": "^4.1.10",
+    "axios": "^1.16.0",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "react-hook-form": "^7.58.0",
+    "react-icons": "^5.5.0",
+    "react-redux": "^9.2.0",
+    "react-router": "^7.6.2",
+    "redux-persist": "^6.0.0",
+    "sonner": "^2.0.5",
+    "tailwindcss": "^4.1.10",
+    "yup": "^1.6.1"
+    
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.25.0",
+    "@types/react": "^19.1.2",
+    "@types/react-dom": "^19.1.2",
+    "@vitejs/plugin-react": "^4.4.1",
+    "cypress": "^15.15.0",
+    "daisyui": "^5.0.43",
+    "eslint": "^9.25.0",
+    "eslint-plugin-react-hooks": "^5.2.0",
+    "eslint-plugin-react-refresh": "^0.4.19",
+    "globals": "^16.0.0",
+    "typescript": "~5.8.3",
+    "typescript-eslint": "^8.30.1",
+    "vite": "^6.3.5"
+    
+  },
+  "packageManager": "pnpm@11.1.3+sha512.c85357fe17ca12dd23dd7071822666dfd7e3cb76fe214e3370b5ea2fb34f2a231185509b63e717f3cd0acb38dd3f8d82bcd5e8172400ae678b70ea4fbed0896d"
+}

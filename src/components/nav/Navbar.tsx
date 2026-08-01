@@ -53,12 +53,12 @@ const Navbar = () => {
 									)
 								}
 								
-								<li className="font-bold text-lg">
+								{/* <li className="font-bold text-lg">
 									<NavLink to="/register">Register</NavLink>
 								</li>
 								<li className="font-bold text-lg">
 									<NavLink to="/login">Login</NavLink>
-								</li>
+								</li> */}
 							</ul>
 						</ul>
 					</div>

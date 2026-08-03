@@ -74,7 +74,7 @@ return (
                 )}
 
                 <input
-                    data-test="signup-lasttName"
+                    data-test="signup-lastName"
                     type="text"
                     {...register('lastName')}
                     placeholder="Last Name"

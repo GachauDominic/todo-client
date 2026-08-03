@@ -57,7 +57,7 @@ function Register() {
 
 return (
     <div className="flex justify-center items-center min-h-screen bg-base-200 ">
-        <div className="w-full max-w-lg p-8 rounded-xl shadow-lg bg-white">
+        <div className="w-full max-w-lg p-8 rounded-xl shadow-lg bg-white" data-test="signup-field" >
             <h1 className="text-3xl font-bold mb-6 text-center">Account Registration</h1>
             <form onSubmit={handleSubmit(onSubmit)} className="space-y-4">
 

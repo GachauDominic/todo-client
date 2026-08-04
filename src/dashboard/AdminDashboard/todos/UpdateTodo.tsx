@@ -76,6 +76,7 @@ const UpdateTodo = ({todo}: UpdateTodoProps ) => {
 				<h3 className="font-bold text-lg mb-4">Update Todo</h3>
 				<form onSubmit={handleSubmit(onSubmit)} className="flex flex-col gap-4">
 					<input
+							data-test='todo-name-input'
 							type="text"
 							{...register("todoName")}
 							placeholder="Todo Name"
@@ -87,6 +88,7 @@ const UpdateTodo = ({todo}: UpdateTodoProps ) => {
 
 					<textarea
 						{...register("description")}
+            data-test='todo-description-input'
 						placeholder="Description"
 						className="textarea textarea-bordered w-full p-2 focus:ring-2 focus:ring-blue-500 text-lg bg-white text-gray-800"
 					/>
@@ -95,6 +97,7 @@ const UpdateTodo = ({todo}: UpdateTodoProps ) => {
 					)}
 
 					<input
+						data-test='todo-userId-input'
 						type="number"
 						{...register("userId")}
 						placeholder="User ID"
@@ -105,6 +108,7 @@ const UpdateTodo = ({todo}: UpdateTodoProps ) => {
 					)}
 
 					<input
+						data-test='todo-date-input'
 						type="date"
 						{...register("dueDate")}
 						className="input rounded w-full p-2 focus:ring-2 focus:ring-blue-500 text-lg bg-white text-gray-800"
@@ -119,6 +123,7 @@ const UpdateTodo = ({todo}: UpdateTodoProps ) => {
 							<div className="flex gap-4">
 								<label className="flex items-center gap-1">
 									<input
+										data-test='todo-status-complete'
 										type="radio"
 										value="true"
 										{...register("isCompleted")}
@@ -128,6 +133,7 @@ const UpdateTodo = ({todo}: UpdateTodoProps ) => {
 								</label>
 								<label className="flex items-center gap-1">
 									<input
+										data-test='todo-status-pending'
 										type="radio"
 										value="false"
 										{...register("isCompleted")}
@@ -144,7 +150,10 @@ const UpdateTodo = ({todo}: UpdateTodoProps ) => {
 						)}
 
 						<div className="modal-action">
-							<button type="submit" className="btn btn-primary" disabled={isLoading}>
+							<button type="submit" className="btn btn-primary" 
+								disabled={isLoading} 
+								data-test='update-todo-submit-btn'
+							>
 								{isLoading ? (
 									<>
 										<span className="loading loading-spinner text-primary" /> Updating...
@@ -153,6 +162,7 @@ const UpdateTodo = ({todo}: UpdateTodoProps ) => {
 							</button>
 							<button
 								className="btn"
+								data-test='update-todo-close-btn'
 								type="button"
 								onClick={() => {
 									(document.getElementById('update_modal') as HTMLDialogElement)?.close();

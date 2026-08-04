@@ -49,7 +49,7 @@ const CreateTodo = () => {
 
   return (
     <dialog id='create_todo' className='modal sm:modal-middle'>
-      <div  className="modal-box bg-gray-600 text-white w-full max-w-xs sm:max-w-lg mx-auto rounded-lg">
+      <div  className="modal-box bg-gray-600 text-white w-full max-w-xs sm:max-w-lg mx-auto rounded-lg" data-test='create-todo-dialog-box'>
         <h3 className='font-bold text-lg mb-4'>Create New Todo</h3>
         
         <form onSubmit={handleSubmit(onSubmit)} className='flex flex-col gap-4'>

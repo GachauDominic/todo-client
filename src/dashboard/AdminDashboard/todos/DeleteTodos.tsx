@@ -36,6 +36,7 @@ const DeleteTodos = ({todo}: DeleteTodoProps) => {
         <div className="modal-action">
           <button 
           className="btn btn-primary" 
+          data-test='confirm-todo-deletion'
           onClick={handleDelete}
           disabled={isLoading}>
               {isLoading ? (
@@ -47,6 +48,7 @@ const DeleteTodos = ({todo}: DeleteTodoProps) => {
           <button
               className="btn"
               type="button"
+              data-test='reject-todo-deletion'
               onClick={() => 
                   (document.getElementById('delete_modal') as HTMLDialogElement)?.close()}
           >

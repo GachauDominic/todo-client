@@ -76,14 +76,17 @@ const Todos = () => {
                   </td>
                     {/* Actions to Delete and Edit */}
                   <td>
+                    {/* update | edit */}
                     <button className='btn btn-sm btn-primary mr-4 text-blue-500'
+                      data-test='update-todo-btn'
                       onClick={()=> {
                         handleEdit(todo);
                         (document.getElementById("update_modal") as HTMLDialogElement)?.showModal()
                       }}
                       > <FaEdit size={20} />
-                      </button>
+                    </button>
 
+                    {/* delete */}
                     <button
                       data-test="delete-todo-btn"
                       onClick={()=>{

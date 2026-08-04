@@ -139,7 +139,7 @@ const CreateTodo = () => {
               <button 
               className='btn'
               type='button'
-              data-type='create-todo-close-btn'
+              data-test='create-todo-close-btn'
               onClick={()=>
                 (document.getElementById('create_todo') as HTMLDialogElement)?.close()}
               >

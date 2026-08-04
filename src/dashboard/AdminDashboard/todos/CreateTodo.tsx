@@ -67,6 +67,7 @@ const CreateTodo = () => {
           <textarea 
             {...register("description")}
             placeholder='Description'
+            data-test='todo-description-input'
             className='textarea textarea-bordered w-full p-2 focus:ring-2 focus:ring-blue-500 text-gray-600 bg-white'
           />
           {errors.description && (
@@ -138,6 +139,7 @@ const CreateTodo = () => {
               <button 
               className='btn'
               type='button'
+              data-type='create-todo-close-btn'
               onClick={()=>
                 (document.getElementById('create_todo') as HTMLDialogElement)?.close()}
               >

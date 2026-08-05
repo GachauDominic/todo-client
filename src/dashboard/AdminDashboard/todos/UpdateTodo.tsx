@@ -123,7 +123,7 @@ const UpdateTodo = ({todo}: UpdateTodoProps ) => {
 							<div className="flex gap-4">
 								<label className="flex items-center gap-1">
 									<input
-										data-test='todo-status-complete'
+										data-test='update-todo-status-complete'
 										type="radio"
 										value="true"
 										{...register("isCompleted")}
@@ -133,7 +133,7 @@ const UpdateTodo = ({todo}: UpdateTodoProps ) => {
 								</label>
 								<label className="flex items-center gap-1">
 									<input
-										data-test='todo-status-pending'
+										data-test='update-todo-status-pending'
 										type="radio"
 										value="false"
 										{...register("isCompleted")}
@@ -152,7 +152,7 @@ const UpdateTodo = ({todo}: UpdateTodoProps ) => {
 						<div className="modal-action">
 							<button type="submit" className="btn btn-primary" 
 								disabled={isLoading} 
-								data-test='update-todo-submit-btn'
+								data-test='confirm-update-todo-submit-btn'
 							>
 								{isLoading ? (
 									<>
@@ -162,7 +162,7 @@ const UpdateTodo = ({todo}: UpdateTodoProps ) => {
 							</button>
 							<button
 								className="btn"
-								data-test='update-todo-close-btn'
+								data-test='reject-update-todo-close-btn'
 								type="button"
 								onClick={() => {
 									(document.getElementById('update_modal') as HTMLDialogElement)?.close();

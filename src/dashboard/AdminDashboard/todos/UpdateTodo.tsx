@@ -76,7 +76,7 @@ const UpdateTodo = ({todo}: UpdateTodoProps ) => {
 				<h3 className="font-bold text-lg mb-4">Update Todo</h3>
 				<form onSubmit={handleSubmit(onSubmit)} className="flex flex-col gap-4">
 					<input
-							data-test='todo-name-input'
+							data-test='update-todo-name-input'
 							type="text"
 							{...register("todoName")}
 							placeholder="Todo Name"
@@ -88,7 +88,7 @@ const UpdateTodo = ({todo}: UpdateTodoProps ) => {
 
 					<textarea
 						{...register("description")}
-            data-test='todo-description-input'
+            data-test='update-todo-description-input'
 						placeholder="Description"
 						className="textarea textarea-bordered w-full p-2 focus:ring-2 focus:ring-blue-500 text-lg bg-white text-gray-800"
 					/>
@@ -97,7 +97,7 @@ const UpdateTodo = ({todo}: UpdateTodoProps ) => {
 					)}
 
 					<input
-						data-test='todo-userId-input'
+						data-test='update-todo-userId-input'
 						type="number"
 						{...register("userId")}
 						placeholder="User ID"
@@ -108,7 +108,7 @@ const UpdateTodo = ({todo}: UpdateTodoProps ) => {
 					)}
 
 					<input
-						data-test='todo-date-input'
+						data-test='update-todo-date-input'
 						type="date"
 						{...register("dueDate")}
 						className="input rounded w-full p-2 focus:ring-2 focus:ring-blue-500 text-lg bg-white text-gray-800"
